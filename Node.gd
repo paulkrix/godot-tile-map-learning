@@ -97,8 +97,7 @@ func _process(delta):
   # I beleive this is better as we can very easily control whether it's a click, drag or release
   if Input.is_action_just_released( "left_mouse_button" ):
     var position = get_viewport().get_mouse_position()
-    print( "Pressed at: ", position )
-    print( $TileMap.world_to_map(position) )
+
   if Input.is_action_just_pressed( "ui_up" ):
     $Dude.move( Vector2(0,-1) )
     showRange( $Dude )
@@ -111,3 +110,7 @@ func _process(delta):
   if Input.is_action_just_pressed( "ui_right" ):
     $Dude.move( Vector2(1,0) )
     showRange( $Dude )
+
+func end_turn():
+  $Dude.end_turn()
+  showRange( $Dude )

@@ -44,4 +44,54 @@ _sections_unfolded = [ "Transform" ]
 script = ExtResource( 6 )
 _sections_unfolded = [ "Transform" ]
 
+[node name="End turn" type="Button" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1280.0
+margin_top = 832.0
+margin_right = 1345.0
+margin_bottom = 852.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "End turn"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Turn" type="Label" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1325.0
+margin_top = 809.0
+margin_right = 1365.0
+margin_bottom = 823.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Turn 1"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[connection signal="pressed" from="End turn" to="." method="end_turn"]
+
 
