@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNG/topdownTile_25.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNG/topdownTile_30.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+[node name="Clear" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="Blocked" type="Sprite" parent="." index="1"]
+
+position = Vector2( 70, 0 )
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+
+
