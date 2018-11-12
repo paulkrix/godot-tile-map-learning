@@ -10,7 +10,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="EncounterUI" type="Node"]
+[node name="EncounterUI" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -41,6 +41,35 @@ audio_bus_name = "Master"
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
+[node name="RichTextLabel" type="RichTextLabel" parent="BottomUI/SelectedInfo" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 9.0
+margin_right = 408.0
+margin_bottom = 79.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Use the arrow keys to move around and the end turn button to start a new turn. That's all you can do!"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Margin", "Rect" ]
+
 [node name="TurnInfo" type="Node2D" parent="BottomUI" index="1"]
 
 script = ExtResource( 4 )
@@ -67,6 +96,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = 5.0
 margin_top = 5.0
 margin_right = 44.0
 margin_bottom = 14.0
@@ -88,6 +118,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = 5.0
 margin_top = 25.0
 margin_right = 80.0
 margin_bottom = 39.0

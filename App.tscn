@@ -2,7 +2,7 @@
 
 [ext_resource path="res://App.gd" type="Script" id=1]
 
-[node name="App" type="Node" index="0"]
+[node name="App" type="Node"]
 
 script = ExtResource( 1 )
 
