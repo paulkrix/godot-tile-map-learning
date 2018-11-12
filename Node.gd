@@ -4,6 +4,7 @@ var preScript = preload("res://Scripts/softnoise.gd")
 var softnoise
 var world
 var worldSize = Vector2( 23, 14 )
+var turn = 1
 
 func _ready():
   world = []
@@ -112,5 +113,7 @@ func _process(delta):
     showRange( $Dude )
 
 func end_turn():
+  turn = turn + 1
   $Dude.end_turn()
+  $Turn.set_text("Turn " + str(turn) )
   showRange( $Dude )
