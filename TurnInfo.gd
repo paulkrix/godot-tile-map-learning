@@ -29,9 +29,9 @@ func _on_Area2D_mouse_entered():
   highlighted = true
   update()
 
-
 func _on_Area2D_mouse_exited():
   highlighted = false
   update()
 
-
+func setTurn( turn ):
+  $TurnCounterLabel.set_text( "Turn: " + str( turn ) )

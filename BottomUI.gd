@@ -12,21 +12,3 @@ func _ready():
 func _draw():
   var position = Vector2( 0, 0 )
   var UIShape = Rect2( position, shape )
-  #draw_rect( UIShape, Color( 0.7, 0.7, 0.7, 1 ), true )
-  #draw_rect( UIShape, Color( 1, 1, 1, 1 ), false )
-
-#func handleHover( event ):
-#  if $SelectedInfo.handleHover( event ):
-#    return true
-#  if $TurnInfo.handleHover( event ):
-#    return true  
-#  return false
-
-#func inBounds( event ):
-#  var position = self.get_position()
-#  if (event.position[0] > position[0] and
-#      event.position[1] > position[1] and
-#      event.position[0] < position[0] + shape[0] and
-#      event.position[1] < position[1] + shape[1]):
-#        return true
-#  return false

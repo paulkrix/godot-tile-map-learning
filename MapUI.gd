@@ -20,6 +20,10 @@ func registerMouseHighlight( tile, outline, fill ):
   mouseHighlight = [ tile, outline, fill ]
   update()
 
+func removeMouseHighlight():
+  mouseHighlight = null
+  update()
+
 func resetRangeHighlight():
   rangeHighlights.clear()
 
@@ -28,4 +32,3 @@ func registerRangeHighlight( tile, outline, fill ):
     [ tile, outline, fill ]
   )
   update()
-
